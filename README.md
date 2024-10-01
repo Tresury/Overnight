@@ -13,7 +13,7 @@
 
 Писал и тестировал проект через Hardhat на форке ETH mainnet (подробнее см. hardhat.config.js)
 
-1. Запустить ноду Infura.
+1. Запустить ноду Infura
 
    Вызвать в терминале команду npx hardhat node --fork https://mainnet.infura.io/v3/xxxxxxxxxxxxx (вместо xxxxxxxxxxxxx свой пароль Infura)
 
