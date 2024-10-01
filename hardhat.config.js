@@ -6,7 +6,7 @@ module.exports = {
   networks: {
     hardhat: {
       forking: {
-        url: "https://mainnet.infura.io/v3/d4047885e57145f9a67195e8fe8e8245",
+        url: "https://mainnet.infura.io/v3/xxxxxxxxxxxxxxxxxxxx", // ввести свою ссылку infura
         blockNumber: 20854002
       }
     }
