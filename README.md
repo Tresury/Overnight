@@ -1,13 +1,18 @@
-# Sample Hardhat Project
+# Put liquidity in UniswapV3Pool
+Тех.задание
+Необходимо написать контракт, который взаимодействует с протоколом UniswapV3.
+В контракт подается информация о интересующем пуле (адрес пула), количество первого и второго актива, который необходимо вложить в позицию, а также параметр ширины.
+Необходимо вложить заданные объемы в позицию таким образом, чтобы ширина этой позиции равнялась заданному параметру.
+Ширину предлагаем считать следующим образом: width = (upperPrice - lowerPrice) * 10000 / (lowerPrice + upperPrice).
+Необходимо, чтобы контракт работал для любого uniswap v3 пула вне зависимости от вкладываемых токенов.
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+Задача должна быть решена полностью ончейн (нет никаких расчетов не на контракте) и покрыта необходимыми тестами.
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+
+Писал и тестировал проект на Hardhat на форк ETH mainnet (подробнее см. hardhat.config.js)
+
+1. Для запуска нужно запустить ноду Infura
+npx hardhat node --fork https://mainnet.infura.io/v3/xxxxxxxxxxxxx (вместо xxxxxxxxxxxxx свой пароль Infura)
+2. npx hardhat test - скомпилирует смарт-контракт и запустит тест
+3. в файле AddLiquidity.js адрес пула подбирается оффчейн в зависимости от токенов для ликвидности.
