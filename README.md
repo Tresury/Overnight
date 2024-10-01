@@ -13,8 +13,10 @@
 
 Писал и тестировал проект через Hardhat на форке ETH mainnet (подробнее см. hardhat.config.js)
 
-1. Запустить ноду Infura
-Вызвать в терминале команду npx hardhat node --fork https://mainnet.infura.io/v3/xxxxxxxxxxxxx (вместо xxxxxxxxxxxxx свой пароль Infura)
-Аналогично заменить пароль в файле hardhat.config.js
+1. Запустить ноду Infura.
+
+   Вызвать в терминале команду npx hardhat node --fork https://mainnet.infura.io/v3/xxxxxxxxxxxxx (вместо xxxxxxxxxxxxx свой пароль Infura)
+
+   Аналогично заменить пароль в файле hardhat.config.js
 3. npx hardhat test - скомпилирует смарт-контракт и запустит тест
 4. в файле AddLiquidity.js адрес пула подбирается оффчейн в зависимости от токенов для ликвидности
